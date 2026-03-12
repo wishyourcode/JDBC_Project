@@ -25,7 +25,7 @@ public class ThirdStep {
 			connection.close();
 			System.out.println("5th step implemented");
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+			// TODO Auto-generated catch block0
 			e.printStackTrace();
 		}
 	}

@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class UpdateTable {
+public class DeleteRecords {
 	public static void main(String[] args) {
 		try {
 			Class.forName("org.postgresql.Driver");
@@ -18,13 +18,13 @@ public class UpdateTable {
 					"root");
 			System.out.println("2nd Step Implemented");
 			Statement statement = connection.createStatement();
-			System.out.println("3rd step implemented");
-			String sql = "UPDATE student SET age = 20 WHERE id = 1";
+			System.out.println("3rd Step Implemented");
+			String sql = "DELETE FROM student WHERE id = 2";
 			statement.execute(sql);
-			System.out.println("4th step implemented");
+			System.out.println("Deletation done");
 			connection.close();
-			System.out.println("5th step implemented");
 		} catch (SQLException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

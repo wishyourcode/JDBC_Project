@@ -25,13 +25,11 @@ public class FetchQuery {
 			ResultSet resultSet = statement.executeQuery(sql);
 			System.out.println("4th step Implemented");
 			while (resultSet.next()) {
-				System.out.println(resultSet.getInt("id"));
-				System.out.println(resultSet.getString("name"));
-				System.out.println(resultSet.getInt("age"));
+				System.out.println("Id: " + resultSet.getInt("id"));
+				System.out.println("Name: " + resultSet.getString("name"));
+				System.out.println("Age: " + resultSet.getInt("age"));
 			}
-
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
