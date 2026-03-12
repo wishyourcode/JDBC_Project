@@ -19,8 +19,8 @@ public class ThirdStep {
 			System.out.println("2nd Step Implemented");
 			Statement statement = connection.createStatement();
 			System.out.println("3rd step implemented");
-			String sql = "INSERT INTO student VALUES(1, 'Vishal Mishra',23), (2, 'Piyush Mishra',22)";
-			statement.execute(sql);
+			String sql = "INSERT INTO student VALUES(4, 'Shivam Mishra',23), (5, 'Gautam Shukla',22),(6,'Vishu Mishra', 23)";
+			statement.executeUpdate(sql);
 			System.out.println("4th step implemented");
 			connection.close();
 			System.out.println("5th step implemented");
